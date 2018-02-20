@@ -27,11 +27,11 @@ def startBuildProcess():
 
     os.chdir(projectPath)
 
-
     '''Use this if you get an error saying permission denied'''
     #test = subprocess.Popen(["chmod","+x","gradlew"], stdout=subprocess.PIPE)
-    #p = subprocess.Popen(['./gradlew', buildModifierOffline, targetBuildName], stdout=subprocess.PIPE)
-    p = subprocess.Popen(['ls'], stdout=subprocess.PIPE)
+
+    p = subprocess.Popen(['./gradlew', buildModifierOffline, targetBuildName], stdout=subprocess.PIPE)
+    
     while True:
         line = p.stdout.readline()
         if line != b'':
