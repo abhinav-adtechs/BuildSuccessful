@@ -12,7 +12,8 @@ It is a python script which automates the process of `gradle assemble` and `apk 
 1. First install `python 2.7` and clone this project.
 Then make these initialisations:
 
-```projectPath = "/your/project/path"
+```
+projectPath = "/your/project/path"
 targetBuildName = "yourTargetBuildName"
 buildModifierOffline = "--offline" 
 apkOutputPath = "/Your/apk/output/path/myapp.apk"
